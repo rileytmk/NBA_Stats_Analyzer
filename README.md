@@ -21,3 +21,32 @@ Currently, the core functionality of the project is a machine learning model tha
 ## How it works
 Starts by retrieving data 
 
+
+
+
+
+## Example
+
+```python
+# Gets points scored in the past 5 games for nba player Victor Wembanyama
+def predict_next_points(games):
+    games = [games]
+    next_points = model.predict(games)
+    return next_points[0]
+
+player = Player("Victor Wembanyama")
+player.player_id = player.getPlayerId()
+games = player.getGameStats2425()
+past_5 = player.getPast5Pts(games)
+past_5.reverse()
+print(past_5)
+predicted_points = predict_next_points(past_5)
+print(predicted_points)
+```
+
+```python
+# Ouput
+[30, 20, 23, 30, 27] # past 5 games
+25.801693715428033 # predicted points scored in next game
+```
+
