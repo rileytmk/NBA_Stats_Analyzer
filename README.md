@@ -49,4 +49,5 @@ print(predicted_points)
 [30, 20, 23, 30, 27] # past 5 games
 25.801693715428033 # predicted points scored in next game
 ```
-
+![Wemby's stats from nba.com](https://github.com/rileytmk/NBA_Stats_Analyzer/blob/main/Wemby.png?raw=true)
+In red are Wemby's points scored in his past five games, and in green is the score he achieved in his next game. The model predicted that Wemby would score 25.8 points, while in reality, he scored 24. In this case, the model was fairly accurate, but for some other players, the predictions were off by approximately +/- 4 points.
