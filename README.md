@@ -6,7 +6,7 @@ I created this project for fun after joining a fantasy basketball league with my
 Currently, the core functionality of the project is a machine learning model that precicts the amount of points a player will score in their next game based on their past 5 performances. Using the nba_api, I am able to access historical data from nba.com and train data to make predictions off of.
 ## Features
 - Data Collection: Retrieves historical data and stored in pandas dataframes for starters from the 2023-24 NBA season using functions from the nba_api to use as training data.
-- Machine Learning Model: Utilizes a Linear Regression Model from scikit-learn train data from the 2023-24 season and recognize patterns.
+- Machine Learning Model: Utilizes a Linear Regression Model from scikit-learn to train data from the 2023-24 season and recognize patterns.
 - Prediction: Given a Player's past 5 games the model is able to predict the amount of points they will score in their next game.
 
 ## Future Goals
@@ -17,14 +17,7 @@ Currently, the core functionality of the project is a machine learning model tha
 - Improve accuracy by experimenting with different machine learning models
 - Use generative AI to create player data that mimics realistic performance
 
-## How it works
-Starts by retrieving data 
-
-
-
-
-
-## Example
+## Example Prediction
 
 ```python
 # Gets points scored in the past 5 games for nba player Victor Wembanyama
@@ -49,4 +42,4 @@ print(predicted_points)
 25.801693715428033 # predicted points scored in next game
 ```
 ![Wemby's stats from nba.com](https://github.com/rileytmk/NBA_Stats_Analyzer/blob/main/Wemby.png?raw=true)
-In red are Wemby's points scored in his past five games, and in green is the score he achieved in his next game. The model predicted that Wemby would score 25.8 points, while in reality, he scored 24. In this case, the model was fairly accurate, but for some other players, the predictions were off by approximately +/- 4 points.
+In red are Wemby's points scored in his past five games, and in green is the score he achieved in his next game. The model predicted that Wemby would score 25.8 points, while in reality, he scored 24. In this case, the model was fairly accurate, but for some other players, the predictions were off by approximately +/- 5 points.
